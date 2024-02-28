@@ -1,5 +1,5 @@
 import { Card, Image } from '@nextui-org/react';
-import { Product } from '..';
+import { type Product } from '..';
 import { Link } from 'react-router-dom';
 
 interface Props {
@@ -40,7 +40,6 @@ export const ProductCard = ({
             {fullDescription
               ? product.description
               : product.description.slice(0, 50) + '...'}
-            {product.description.slice(0, 50)}...
           </p>
 
           <p className='text-xl font-black text-gray-800'>
